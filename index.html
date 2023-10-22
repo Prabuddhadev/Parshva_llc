@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Parshva Holdings, LLC</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+    <h1 id="userdata">User Data</h1>
+    <form id="docketForm">
+        <div class="container">
+            <label for="name">Name: </label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="startTime">Start time: </label>
+            <input type="datetime-local" id="startTime" name="startTime" required>
+
+            <label for="endTime">End time: </label>
+            <input type="datetime-local" id="endTime" name="endTime" required>
+
+            <label for="hoursWorked">No. of hours worked: </label>
+            <input type="number" id="hoursWorked" name="hoursWorked" required>
+
+            <label for="ratePerHour">Rate per hour: </label>
+            <input type="number" id="ratePerHour" name="ratePerHour" required>
+
+            <!-- Supplier Dropdown -->
+            <label for="supplier">Supplier: </label>
+            <select id="supplier" name="supplier"></select>
+
+            <!-- Purchase Order (PO) Dropdown -->
+            <label for="po">PO Number: </label>
+            <select id="po" name="po"></select>
+
+            <!-- Description Block -->
+            <div class="descriptionBlock">
+                <h3>Description:</h3>
+                <p id="description"></p>
+            </div>
+
+            <button type="button" id="submitButton">Submit</button>
+            <div id="message"></div>
+        </div>
+    </form>
+    <script src="./script.js"></script>
+</body>
+</html>
